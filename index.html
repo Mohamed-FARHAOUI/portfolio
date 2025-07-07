@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricodes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link  rel="stylesheet"  href="portfoilio2.css" type="text/css"></link>
+    <link rel="shortcut icon" href="image/logotop.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.7/css/flag-icon.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="glass">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="navMenu">
+          <li><a href="#hero" data-translate="home">Home</a></li>
+          <li><a href="#about" data-translate="about">About</a></li>
+          <li><a href="#services" data-translate="services">Services</a></li>
+          <li><a href="#portfolio" data-translate="portfolio">Portfolio</a></li>
+          <li><a href="#contact" data-translate="contact">Contact</a></li>
+          <li>
+            <select id="language-select" onchange="setLanguage(this.value)" style="padding: 6px 10px; border-radius: 12px; border: 1px solid rgba(255,77,77,0.3); background: var(--glass-bg); color: var(--text-dark); cursor: pointer;">
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
+              <option value="de">DE</option>
+              <option value="nl">NL</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      
+      <script>
+        function setLanguage(lang) {
+          // Your language switching logic here (e.g., updating text)
+          console.log('Selected language:', lang);
+          // Example: call your translation function here
+        }
+      </script>
+      
+      <div class="title2">
+        <!-- Using placeholder image since we don't have access to your logo -->
+        <img src="image/logo4.png" alt="Tricodes Logo">
+    </div>
+
+
+    <section id="hero" class="hero">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="hero-content">
+            <h1 data-translate="herotitle">Your Vision. My Code. Experiences That Speak.</h1>
+            <p data-translate="herosubtitle" >Modern, fast, responsive – built with passion and precision.</p>
+            <a href="#contact" class="cta-button" data-translate="herobutton">Let's Work Together</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <img src="image/portfolio.png" Alex Morgan - Web Developer>
+                </div>
+                <div class="about-text">
+                    <h3 data-translate="hi">Hi, I'm Mohamed Farhaoui</h3>
+                    <p data-translate="p1">A freelance web developer driven by a strong passion for crafting digital experiences that don’t just look good, but perform exceptionally.</p>
+                    <p data-translate="p2">I believe in the power of clean code, intuitive design, and seamless user experiences. Every project is an opportunity to solve real problems and create lasting value for businesses and their customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <img src="image/nasr.png"Alex Morgan - Web Developer>
+                </div>
+                <div class="about-text">
+                    <h3 data-translate="namenasr">Hi, I'm Nasr-dine Aslimani</h3>
+                    <p data-translate="nasrp1">A versatile full-stack developer with a deep interest in crafting smooth, efficient, and engaging web solutions.</p>
+                    <p data-translate="nasrp2">Clean architecture, thoughtful design, and performance-first development are at the heart of everything I create.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <img src="image/adnane.png" Alex Morgan - Web Developer>
+                </div>
+                <div class="about-text">
+                    <h3 data-translate="adnanename">Hi, I'm Adnane Kherbache</h3>
+                    <p data-translate="adnanep1">A creative full-stack developer focused on building functional, fast, and visually engaging web experiences.</p>
+                    <p data-translate="adnanep2">With a sharp eye for detail and a problem-solving mindset, I transform ideas into digital products that deliver real impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-translate="services">Services</h2>
+            <p class="section-subtitle fade-in" data-translate="competence">Comprehensive solutions to bring your digital vision to life</p>
+            <div class="services-grid">
+                <div class="service-card glass fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-translate="dev">Web Development</h3>
+                    <p data-translate="custum">Custom websites and web applications built with modern technologies like React, Node.js, and more.</p>
+                </div>
+                <div class="service-card glass fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 data-translate="ecomerce">E-commerce</h3>
+                    <p data-translate="ecomerce2">Complete online stores with payment integration, inventory management, and optimized checkout flows.</p>
+                </div>
+                <div class="service-card glass fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 data-translate="ceo">SEO Optimization</h3>
+                    <p data-translate="ceo2">Technical SEO, performance optimization, and search engine visibility to grow your online presence.</p>
+                </div>
+                <div class="service-card glass fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-translate="design">UI/UX Design</h3>
+                    <p data-translate="design2">User-centered design that creates intuitive, engaging experiences and drives conversions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-translate="process">My Process</h2>
+            <p class="section-subtitle fade-in" data-translate="proven">A proven methodology that delivers exceptional results</p>
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3 data-translate="discover">Discovery</h3>
+                    <p data-translate="discover2">We dive deep into your business goals, target audience, and project requirements to create a solid foundation.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <h3 data-translate="design3">Design</h3>
+                    <p data-translate="designp">Wireframes, mockups, and prototypes that bring your vision to life while ensuring optimal user experience.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <h3 data-translate="build">Build</h3>
+                    <p data-translate="build2">Clean, scalable code development with regular updates and transparent communication throughout the process.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <h3 data-translate="lunch">Launch</h3>
+                    <p data-translate="lunch2">Thorough testing, deployment, and post-launch support to ensure everything runs smoothly from day one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2 class="section-title" data-translate="featur">Featured Work</h2>
+            <p class="section-subtitle" data-translate="featur2">Showcasing cutting-edge websites I've crafted for forward-thinking clients</p>
+            
+        <div class="container2">
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image"> <img src="image/port9.png" alt=""></div>
+                    <h3 class="portfolio-title" data-translate="fintech">Portfolio Website</h3>
+                    <p class="portfolio-description" data-translate="fintech2">A clean and modern personal portfolio showcasing projects, skills, and contact information, built with smooth scroll and responsive design.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="image/port2.jpg" alt=""></div>
+                    <h3 class="portfolio-title" data-translate="lux">Luxury Jewelry Webpage</h3>
+                    <p class="portfolio-description" data-translate="lux2">A luxury jewelry brand introduction website with elegant animations, high-resolution product displays, and captivating storytelling.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="image/port3.jpeg" alt=""></div>
+                    <h3 class="portfolio-title" data-translate="ai">Bakery Store</h3>
+                    <p class="portfolio-description" data-translate="ai2"> A visually appealing bakery website with menu highlights, online ordering, and smooth React.js UI using modern Tailwind design.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <!-- <span class="tech-tag">GSAP</span>
+                        <span class="tech-tag">WebGL</span> -->
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="image/port4.jpeg" alt=""></div>
+                    <h3 class="portfolio-title" data-translate="creativ1">Clothing Store</h3>
+                    <p class="portfolio-description" data-translate="creativ2">An e-commerce clothing website with category filters, seasonal lookbooks, cart integration, and a custom admin panel.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="image/port5.jpg" alt=""></div>
+                    <h3 class="portfolio-title" data-translate="resto">Bakery Store</h3>
+                    <p class="portfolio-description" data-translate="resto2">A dynamic bakery ordering platform featuring user login, real-time cart updates, and a custom-built PHP/MySQL backend for order management.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+        
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="image/port6.jpg" alt=""></div>
+                    <h3 class="portfolio-title" data-translate="tech2">Restaurant Website</h3>
+                    <p class="portfolio-description " data-translate="tech3">A modern restaurant website with a digital menu, reservation system, location map, and responsive design for mobile users.</p>
+                    <div class="portfolio-tech">
+                        <!-- <span class="tech-tag">Svelte</span>
+                        <span class="tech-tag">CSS Grid</span>
+                        <span class="tech-tag">Intersection Observer</span>
+                        <span class="tech-tag">PWA</span> -->
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="foot">Let's Create Something Amazing</h2>
+            <p class="section-subtitle" data-translate="foot2">Ready to bring your vision to life? Get in touch for a free consultation</p>
+            
+            <form  class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="hidden" name="access_key" value="d42c77fc-443b-4a9d-b7dd-c0baa856f898">
+                <div class="form-group">
+                    <label for="name" data-translate="name1">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="email" data-translate="gmail">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number (for WhatsApp replies)</label>
+                    <div class="phone-section">
+                        <select id="countryCode" name="countryCode" required>
+                            <option value="+212" data-flag="ma">🇲🇦 +212</option>
+                            <option value="+49" data-flag="de">🇩🇪 +49</option>
+                            <option value="+34" data-flag="es">🇪🇸 +34</option>
+                            <option value="+31" data-flag="nl">🇳🇱 +31</option>
+                            <option value="+33" data-flag="fr">🇫🇷 +33</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="612345678" required>
+                    </div>
+                </div>
+                  
+                
+                <div class="form-group">
+                    <label for="project" data-translate="proje3">Project Type</label>
+                    <input type="text" id="project" name="project" placeholder="e.g., E-commerce, Portfolio, Business Website" data-translate-placeholder="projectPlaceholder">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" data-translate="detail1">Project Details</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project, goals, and timeline..." required data-translate-placeholder="messagePlaceholder"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn" data-translate="send1">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="premium-footer">
+        <div class="footer-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">Tricodes</div>
+                    <p class="brand-tagline" data-translate="bio">Crafting digital experiences that don't just look good, but perform exceptionally. Your vision, our code.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Aslimani-Nasrdine" class="social-link" aria-label="GitHub" rel="noopener noreferrer" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tricodes.dev/?next=%2Fget.popcard%2F%3Fhl%3Den&hl=en" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title" data-translate="navig">Navigation</h3>
+                    <div class="footer-links">
+                        <a href="#hero" class="footer-link" data-translate="home">Home</a>
+                        <a href="#about" class="footer-link" data-translate="about">About</a>
+                        <a href="#services" class="footer-link" data-translate="services">Services</a>
+                        <a href="#portfolio" class="footer-link" data-translate="portafolio">Portfolio</a>
+                        <a href="#contact" class="footer-link" data-translate="contact">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title" data-translate="services">Services</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link" data-translate="dev">Web Development</a>
+                        <a href="#" class="footer-link" data-translate="ecomerce">E-commerce</a>
+                        <a href="#" class="footer-link" data-translate="ceo">SEO Optimization</a>
+                        <a href="#" class="footer-link" data-translate="design">UI/UX Design</a>
+                        <a href="#" class="footer-link" data-translate="consulting">Consulting</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title" data-translate="contact">Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>contact@tricodes.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>+212 6606-03018 </span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span data-translate="localis">Nador, Morocco</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title" data-translate="language">Language</h3>
+                    <select class="language-selector" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="nl">Nederlands</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2025 codecrafters. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer-bottom-link">Terms of Service</a>
+                    <a href="#" class="footer-bottom-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+  const faders = document.querySelectorAll('.fade-in');
+  
+  const appearOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -100px 0px"
+  };
+  
+  const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+  
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+
+const translations = {
+  en: {
+    home: "Home",
+    about: "About",
+    services: "Services",  // Fixed: changed from duplicate 'contact' key
+    portfolio: "Portfolio",
+    contact: "Contact",
+    herotitle: "Your Vision. My Code. Experiences That Speak.",
+    herosubtitle: "Modern, fast, responsive – built with passion and precision.",
+    herobutton: "Let's Work Together",
+    hi: "Hi, I'm Mohamed Farhaoui",
+    p1: "A freelance web developer driven by a strong passion for crafting digital experiences that don’t just look good, but perform exceptionally.",
+    p2: "I believe in the power of clean code, intuitive design, and seamless user experiences. Every project is an opportunity to solve real problems and create lasting value for businesses and their customers.",
+    adnanename: "Hi, I'm Adnane Kherbache",
+    adnanep1: "A creative full-stack developer focused on building functional, fast, and visually engaging web experiences.",
+    adnanep2: "With a sharp eye for detail and a problem-solving mindset, I transform ideas into digital products that deliver real impact.",
+    namenasr: "Hi, I'm Nasr-dine Aslimani",
+    nasrp1: "A dedicated full-stack developer with a love for turning complex challenges into elegant web solutions.",
+    nasrp2: "From concept to code, I focus on building reliable, scalable, and smooth user experiences that meet real-world needs.",
+    competence:"Comprehensive solutions to bring your digital vision to life",
+    dev:"Web Development",
+    custum:"Custom websites and web applications built with modern technologies like React, Node.js, and more.",
+    ecomerce:"E-commerce",
+    ecomerce2:"Complete online stores with payment integration, inventory management, and optimized checkout flows.",
+    ceo: "SEO Optimization",
+    ceo2: "Technical SEO, performance optimization, and search engine visibility to grow your online presence.",
+    design: "UI/UX Design",
+    design2: "User-centered design that creates intuitive, engaging experiences and drives conversions.",
+    process: "My Process",
+    proven: "A proven methodology that delivers exceptional results",
+    discover: "Discovery",
+    discover2: "We dive deep into your business goals, target audience, and project requirements to create a solid foundation.",
+    design3: "Design",
+    designp: "Wireframes, mockups, and prototypes that bring your vision to life while ensuring optimal user experience.",
+    build: "Build",
+    build2: "Clean, scalable code development with regular updates and transparent communication throughout the process.",
+    lunch: "Launch",
+    lunch2:"Thorough testing, deployment, and post-launch support to ensure everything runs smoothly from day one.",
+    featur: "Featured Work",
+    featur2: "Showcasing cutting-edge websites I've crafted for forward-thinking clients",
+    fintech: "Portfolio Website",
+    fintech2: "A clean and modern personal portfolio showcasing projects, skills, and contact information, built with smooth scroll and responsive design.",
+    lux: "Luxury Jewelry Webpage",
+    lux2: "A luxury jewelry brand introduction website with elegant animations, high-resolution product displays, and captivating storytelling.",
+    ai: "Bakery Store",
+    ai2: "A visually appealing bakery website with menu highlights, online ordering, and smooth React.js UI using modern Tailwind design.",
+    creativ1: "Clothing Store",
+    creativ2: "An e-commerce clothing website with category filters, seasonal lookbooks, cart integration, and a custom admin panel.",
+    resto: "Bakery Store",
+    resto2: " A dynamic bakery ordering platform featuring user login, real-time cart updates, and a custom-built PHP/MySQL backend for order management.",
+    tech2: "Restaurant Website",
+    tech3: "A modern restaurant website with a digital menu, reservation system, location map, and responsive design for mobile users.",
+    foot: "Let's Create Something Amazing",
+    foot2: "Ready to bring your vision to life? Get in touch for a free consultation",
+    name1: "Your Name",
+    gmail: "Email Address",
+    proje3: "Project Type",
+    detail1: "Project Details",
+    send1: "Send Message",
+    bio: "Crafting digital experiences that don't just look good, but perform exceptionally. Your vision, our code.",
+    navig: "Navigation",
+    projectPlaceholder: "e.g., E-commerce, Portfolio, Business Website",
+    messagePlaceholder: "Tell me about your project, goals, and timeline...",
+    consulting: "Consulting",
+    language: "Language",
+    localis:"Nador, Morocco",
+
+
+  
+  },
+  fr: {
+    home: "Accueil",
+    about: "À propos",
+    services: "Services",
+    portfolio: "Portfolio",
+    contact: "Contact",
+    herotitle: "Votre vision. Mon code. Des expériences qui parlent.",
+    herosubtitle: "Moderne, rapide et réactif – conçu avec passion et précision.",
+    herobutton: "Travaillons ensemble",
+    hi: "Salut, je suis Mohamed Farhaoui",
+    p1: "Développeur web freelance animé par une forte passion pour la création d’expériences digitales qui ne sont pas seulement esthétiques, mais aussi performantes.",
+    p2: "Je crois au pouvoir d’un code propre, d’un design intuitif et d’une expérience utilisateur fluide. Chaque projet est une opportunité de résoudre de vrais problèmes et de créer une valeur durable pour les entreprises et leurs clients.",
+    adnanename: "Salut, je suis Adnane Kherbache",
+    adnanep1: "Développeur full-stack créatif, spécialisé dans la création d’expériences web fonctionnelles, rapides et visuellement attrayantes.",
+    adnanep2: "Avec un sens aigu du détail et une approche orientée solution, je transforme les idées en produits numériques à fort impact.",
+    namenasr : "Salut, je suis Nasr-dine Aslimani",
+    nasrp1: "Développeur full-stack engagé, passionné par la transformation de défis complexes en solutions web élégantes.",
+    nasrp2: "De l’idée au code, je m’efforce de créer des expériences fiables, évolutives et fluides qui répondent à des besoins concrets.",
+    competence:"Des solutions complètes pour donner vie à votre vision numérique.",
+    dev:"Développement Web",
+    custum:"Sites web et applications personnalisés développés avec des technologies modernes comme React, Node.js, et bien d'autres.",
+    ecomerce:"E-commerce",
+    ecomerce2:"Boutiques en ligne complètes avec intégration de paiement, gestion des stocks et processus de paiement optimisés.",
+    ceo: "Optimisation SEO",
+    ceo2: "SEO technique, optimisation des performances et visibilité sur les moteurs de recherche pour développer votre présence en ligne.",
+    design: "Conception UI/UX",
+    design2: "Une conception centrée sur l'utilisateur qui crée des expériences intuitives et engageantes, et favorise les conversions.",
+    process: "Mon processus",
+    proven: "Une méthodologie éprouvée qui donne des résultats exceptionnels",
+    discover: "Découverte",
+    discover2: "Nous explorons en profondeur vos objectifs commerciaux, votre public cible et les exigences du projet pour créer une base solide.",
+    design3: "Conception",
+    designp: "Maquettes, prototypes et wireframes qui donnent vie à votre vision tout en garantissant une expérience utilisateur optimale.",
+    build: "Développement",
+    build2: "Développement de code propre et évolutif avec des mises à jour régulières et une communication transparente tout au long du processus.",
+    lunch: "Lancement",
+    lunch2: "Tests approfondis, déploiement et support post-lancement pour garantir un fonctionnement fluide dès le premier jour.",
+    featur: "Travaux en Vedette",
+    featur2: "Présentation de sites web de pointe que j'ai conçus pour des clients avant-gardistes",
+    fintech: "Site portfolio",
+    fintech2: "Un portfolio personnel moderne et épuré présentant des projets, compétences et informations de contact, avec défilement fluide et design responsive.",
+    lux: "Page de bijouterie de luxe",
+    lux2: "Un site de présentation d’une marque de bijoux de luxe avec animations élégantes, affichage haute résolution et narration captivante.",
+    ai: "Boulangerie",
+    ai2: "Un site de boulangerie attrayant avec menu interactif, commande en ligne et interface fluide en React.js avec design Tailwind moderne.",
+    creativ1: "Boutique de vêtements",
+    creativ2: "Un site e-commerce de vêtements avec filtres par catégories, lookbooks saisonniers, panier intégré et panneau d’administration personnalisé.",
+    resto: "Boulangerie",
+    resto2: "Une plateforme dynamique de commande de boulangerie avec connexion utilisateur, panier en temps réel et backend PHP/MySQL personnalisé.",
+    tech2: "Site de restaurant",
+    tech3: "Un site de restaurant moderne avec menu numérique, système de réservation, carte de localisation et design responsive pour mobile.",
+    foot: "Créons Quelque Chose d'Incroyable",
+    foot2: "Prêt à donner vie à votre vision ? Contactez-nous pour une consultation gratuite",
+    name1: "Votre Nom",
+    gmail: "Adresse Email",
+    proje3: "Type de Projet",
+    detail1: "Détails du Projet",
+    send1: "Envoyer le Message",
+    bio: "Créer des expériences numériques qui ne sont pas seulement esthétiques, mais aussi performantes. Votre vision, notre code.",
+    navig: "Navigation",
+    projectPlaceholder: "ex. E-commerce, Portfolio, Site d'entreprise",
+    messagePlaceholder: "Parlez-moi de votre projet, vos objectifs et votre calendrier...",
+    consulting: "Conseil",
+    language: "Langue",
+    localis:"Nador, Maroc",
+
+  },
+  es: {
+    home: "Inicio",
+    about: "Acerca de",
+    services: "Servicios",
+    portfolio: "Portafolio",
+    contact: "Contacto",
+    herotitle: "Tu visión. Mi código. Experiencias que hablan.",
+    herosubtitle: "Moderno, rápido y adaptable – hecho con pasión y precisión.",
+    herobutton: "Trabajemos juntos",
+    hi: "Hola, soy Mohamed Farhaoui",
+    p1: "Desarrollador web freelance con una gran pasión por crear experiencias digitales que no solo se vean bien, sino que también funcionen de forma excepcional.",
+    p2: "Creo en el poder del código limpio, el diseño intuitivo y las experiencias de usuario fluidas. Cada proyecto es una oportunidad para resolver problemas reales y crear valor duradero para los negocios y sus clientes.",
+    adnanename: "Hola, soy Adnane Kherbache",
+    adnanep1: "Desarrollador full-stack creativo centrado en construir experiencias web funcionales, rápidas y visualmente atractivas.",
+    adnanep2: "Con gran atención al detalle y una mentalidad resolutiva, transformo ideas en productos digitales con impacto real.",
+    namenasr: "Hola, soy Nasr-dine Aslimani",
+    nasrp1: "Desarrollador full-stack comprometido con pasión por convertir desafíos complejos en soluciones web elegantes.",
+    nasrp2: "Desde el concepto hasta el código, me enfoco en construir experiencias confiables, escalables y fluidas que resuelvan necesidades reales.",
+    competence:"Soluciones integrales para hacer realidad tu visión digital.",
+    dev:"Desarrollo Web",
+    custum:"Sitios web y aplicaciones personalizadas creados con tecnologías modernas como React, Node.js y más.",
+    ecomerce:"Comercio electrónico",
+    ecomerce2:"Tiendas en línea completas con integración de pagos, gestión de inventario y procesos de pago optimizados.",
+    ceo: "Optimización SEO",
+    ceo2: "SEO técnico, optimización del rendimiento y visibilidad en motores de búsqueda para hacer crecer tu presencia en línea.",
+    design: "Diseño UI/UX",
+    design2: "Diseño centrado en el usuario que crea experiencias intuitivas y atractivas y mejora las conversiones.",
+    process: "Mi proceso",
+    proven: "Una metodología comprobada que ofrece resultados excepcionales",
+    discover: "Descubrimiento",
+    discover2: "Profundizamos en tus objetivos comerciales, audiencia objetivo y requisitos del proyecto para crear una base sólida.",
+    design3: "Diseño",
+    designp: "Wireframes, maquetas y prototipos que dan vida a tu visión y aseguran una experiencia de usuario óptima.",
+    build: "Construcción",
+    build2: "Desarrollo de código limpio y escalable con actualizaciones regulares y comunicación transparente durante todo el proceso.",
+    lunch: "Lanzamiento",
+    lunch2: "Pruebas exhaustivas, implementación y soporte post-lanzamiento para asegurar un funcionamiento sin problemas desde el primer día.",
+    featur: "Trabajo Destacado",
+    featur2: "Mostrando sitios web innovadores que he creado para clientes visionarios",
+    fintech: "Sitio de portafolio",
+    fintech2: "Un portafolio personal limpio y moderno que muestra proyectos, habilidades e información de contacto, con desplazamiento suave y diseño adaptable.",
+    lux: "Página web de joyería de lujo",
+    lux2: "Una página de presentación de una marca de joyería de lujo con animaciones elegantes, productos en alta resolución y narrativa cautivadora.",
+    ai: "Panadería",
+    ai2: "Una página web atractiva para panadería con menú destacado, pedidos en línea e interfaz fluida con React.js y Tailwind moderno.",
+    creativ1: "Tienda de ropa",
+    creativ2: "Una tienda online de ropa con filtros por categoría, lookbooks de temporada, carrito integrado y panel de administración personalizado.",
+    resto: "Panadería",
+    resto2: "Una plataforma dinámica de pedidos de panadería con inicio de sesión, carrito en tiempo real y backend PHP/MySQL personalizado.",
+    tech2: "Página web de restaurante",
+    tech3: "Una página web moderna para restaurante con menú digital, sistema de reservas, mapa de ubicación y diseño responsive.",
+    foot: "Creemos Algo Asombroso",
+    foot2: "¿Listo para dar vida a tu visión? Ponte en contacto para una consulta gratuita",
+    name1: "Tu Nombre",
+    gmail: "Dirección de Email",
+    proje3: "Tipo de Proyecto",
+    detail1: "Detalles del Proyecto",
+    send1: "Enviar Mensaje",
+    bio: "Creando experiencias digitales que no solo lucen bien, sino que funcionan excepcionalmente. Tu visión, nuestro código.",
+    navig: "Navegación",
+    projectPlaceholder: "ej. Comercio electrónico, Portafolio, Sitio web empresarial",
+    messagePlaceholder: "Cuéntame sobre tu proyecto, metas y cronograma...",
+    consulting: "Consultoría",
+    language: "Idioma",
+    localis:"Nador, Marruecos",
+
+},
+
+  de: {
+    home: "Startseite",
+    about: "Über uns",
+    services: "Dienstleistungen",
+    portfolio: "Portfolio",
+    contact: "Kontakt",
+    herotitle: "Deine Vision. Mein Code. Erlebnisse, die sprechen.",
+    herosubtitle: "Modern, schnell, responsiv – mit Leidenschaft und Präzision gebaut.",
+    herobutton: "Lass uns zusammenarbeiten",
+    hi: "Hallo, ich bin Mohamed Farhaoui",
+    p1: "Freelance-Webentwickler mit großer Leidenschaft für die Gestaltung digitaler Erlebnisse, die nicht nur gut aussehen, sondern auch hervorragend funktionieren.",
+    p2: "Ich glaube an die Kraft von sauberem Code, intuitivem Design und nahtlosen Nutzererlebnissen. Jedes Projekt ist eine Gelegenheit, reale Probleme zu lösen und nachhaltigen Mehrwert für Unternehmen und deren Kunden zu schaffen.",
+    adnanename: "Hallo, ich bin Adnane Kherbache",
+    adnanep1: "Ein kreativer Full-Stack-Entwickler mit Fokus auf funktionale, schnelle und visuell ansprechende Web-Erlebnisse.",
+    adnanep2: "Mit einem scharfen Blick fürs Detail und einer lösungsorientierten Denkweise verwandle ich Ideen in digitale Produkte mit echter Wirkung.",
+    namenasr: "Hallo, ich bin Nasr-dine Aslimani",
+    nasrp1: "Engagierter Full-Stack-Entwickler mit Leidenschaft dafür, komplexe Herausforderungen in elegante Weblösungen zu verwandeln.",
+    nasrp2: "Von der Idee bis zum Code baue ich zuverlässige, skalierbare und flüssige Benutzererlebnisse, die echten Bedürfnissen gerecht werden.",
+    competence:"Umfassende Lösungen, um Ihre digitale Vision zum Leben zu erwecken.",
+    dev:"Webentwicklung",
+    custum:"Individuelle Websites und Webanwendungen, entwickelt mit modernen Technologien wie React, Node.js und mehr.",
+    ecomerce:"E-Commerce",
+    ecomerce2:"Vollständige Online-Shops mit Zahlungsintegration, Lagerverwaltung und optimierten Checkout-Prozessen.",
+    ceo: "SEO-Optimierung",
+    ceo2: "Technisches SEO, Leistungsoptimierung und Sichtbarkeit in Suchmaschinen zur Steigerung Ihrer Online-Präsenz.",
+    design: "UI/UX-Design",
+    design2: "Benutzerzentriertes Design, das intuitive und ansprechende Erlebnisse schafft und Konversionen fördert.",
+    process: "Mein Prozess",
+    proven: "Eine bewährte Methodik, die außergewöhnliche Ergebnisse liefert",
+    discover: "Erkundung",
+    discover2: "Wir tauchen tief in Ihre Geschäftsziele, Zielgruppe und Projektanforderungen ein, um eine solide Grundlage zu schaffen.",
+    design3: "Design",
+    designp: "Wireframes, Mockups und Prototypen, die Ihre Vision zum Leben erwecken und gleichzeitig ein optimales Benutzererlebnis sicherstellen.",
+    build: "Entwicklung",
+    build2: "Saubere, skalierbare Code-Entwicklung mit regelmäßigen Updates und transparenter Kommunikation während des gesamten Prozesses.",
+    lunch: "Start",
+    lunch2: "Gründliche Tests, Bereitstellung und Support nach dem Start, um einen reibungslosen Ablauf ab dem ersten Tag zu gewährleisten.",
+    featur: "Ausgewählte Arbeiten",
+    featur2: "Präsentation modernster Websites, die ich für zukunftsorientierte Kunden erstellt habe",
+    fintech: "Portfolio-Website",
+    fintech2: "Eine saubere und moderne Portfolio-Website mit Projekten, Fähigkeiten und Kontaktinfos, mit sanftem Scrollen und responsivem Design.",
+    lux: "Luxus-Schmuck-Website",
+    lux2: "Eine Luxus-Schmuckmarken-Website mit eleganten Animationen, hochauflösenden Produktdarstellungen und fesselndem Storytelling.",
+    ai: "Bäckerei",
+    ai2: "Eine ansprechende Bäckerei-Website mit Menü-Highlights, Online-Bestellungen und glatter React.js-Oberfläche im modernen Tailwind-Stil.",
+    creativ1: "Bekleidungsgeschäft",
+    creativ2: "Eine E-Commerce-Website für Kleidung mit Kategoriefiltern, saisonalen Lookbooks, Warenkorb und individuellem Admin-Panel.",
+    resto: "Bäckerei",
+    resto2: "Eine dynamische Bäckerei-Bestellplattform mit Benutzer-Login, Live-Warenkorb und maßgeschneidertem PHP/MySQL-Backend.",
+    tech2: "Restaurant-Website",
+    tech3: "Eine moderne Restaurant-Website mit digitaler Speisekarte, Reservierungssystem, Standortkarte und mobilem Design.",
+    foot: "Lass Uns Etwas Erstaunliches Schaffen",
+    foot2: "Bereit, deine Vision zum Leben zu erwecken? Kontaktiere uns für eine kostenlose Beratung",
+    name1: "Dein Name",
+    gmail: "E-Mail-Adresse",
+    proje3: "Projekttyp",
+    detail1: "Projektdetails",
+    send1: "Nachricht Senden",
+    bio: "Digitale Erlebnisse gestalten, die nicht nur gut aussehen, sondern auch außergewöhnlich funktionieren. Deine Vision, unser Code.",
+    navig: "Navigation",
+    projectPlaceholder: "z.B. E-Commerce, Portfolio, Unternehmenswebsite",
+    messagePlaceholder: "Erzählen Sie mir von Ihrem Projekt, Zielen und Zeitplan...",
+    consulting: "Beratung",
+    language: "Sprache",
+    localis:"Nador, Marokko",
+
+  },
+  nl: {
+    home: "Startpagina",
+    about: "Over ons",
+    services: "Diensten",
+    portfolio: "Portfolio",
+    contact: "Contact",
+    herotitle: "Jouw visie. Mijn code. Ervaringen die spreken.",
+    herosubtitle: "Modern, snel en responsief – met passie en precisie gemaakt.",
+    herobutton: "Laten we samenwerken",
+    hi: "Hallo, ik ben Mohamed Farhaoui",
+    p1: "Freelance webontwikkelaar met een sterke passie voor het creëren van digitale ervaringen die er niet alleen goed uitzien, maar ook uitstekend presteren.",
+    p2: "Ik geloof in de kracht van schone code, intuïtief design en naadloze gebruikerservaringen. Elk project is een kans om echte problemen op te lossen en blijvende waarde te creëren voor bedrijven en hun klanten.",
+    adnanename: "Hallo, ik ben Adnane Kherbache",
+    adnanep1: "Een creatieve full-stack ontwikkelaar gericht op het bouwen van functionele, snelle en visueel aantrekkelijke webervaringen.",
+    adnanep2: "Met oog voor detail en een probleemoplossende mindset zet ik ideeën om in digitale producten met echte impact.",
+    namenasr: "Hallo, ik ben Nasr-dine Aslimani",
+    nasrp1: "Toegewijde full-stack ontwikkelaar met een passie voor het omzetten van complexe uitdagingen in elegante weboplossingen.",
+    nasrp2: "Van concept tot code richt ik mij op het bouwen van betrouwbare, schaalbare en soepele gebruikerservaringen die echte behoeften oplossen.",
+    competence:"Uitgebreide oplossingen om jouw digitale visie tot leven te brengen.",
+    dev:"Webontwikkeling",
+    custum:"Angepaste websites en webapplicaties gebouwd met moderne technologieën zoals React, Node.js en meer.",
+    ecomerce:"E-commerce",
+    ecomerce2:"Volledige webwinkels met betalingsintegratie, voorraadbeheer en geoptimaliseerde checkout-processen.",
+    ceo: "SEO-optimalisatie",
+    ceo2: "Technische SEO, prestatieoptimalisatie en zoekmachinezichtbaarheid om je online aanwezigheid te vergroten.",
+    design: "UI/UX-ontwerp",
+    design2: "Gebruikersgericht ontwerp dat intuïtieve, boeiende ervaringen creëert en conversies stimuleert.",
+    process: "Mijn proces",
+    proven: "Een bewezen methode die uitzonderlijke resultaten oplevert",
+    discover: "Ontdekking",
+    discover2: "We duiken diep in je zakelijke doelen, doelgroep en projectvereisten om een solide basis te creëren.",
+    design3: "Ontwerp",
+    designp: "Wireframes, mockups en prototypes die je visie tot leven brengen en zorgen voor een optimale gebruikerservaring.",
+    build: "Bouwen",
+    build2: "Schone, schaalbare codeontwikkeling met regelmatige updates en transparante communicatie gedurende het hele proces.",
+    lunch: "Lancering",
+    lunch2: "Grondige tests, implementatie en ondersteuning na de lancering om vanaf dag één alles soepel te laten verlopen.",
+    featur: "Uitgelicht Werk",
+    featur2: "Het tonen van baanbrekende websites die ik voor vooruitstrevende klanten heb gemaakt",
+    fintech: "Portfolio website",
+    fintech2: "Een strak en modern persoonlijk portfolio dat projecten, vaardigheden en contactinfo toont, met soepele scroll en responsief design.",
+    lux: "Luxe juwelenpagina",
+    lux2: "Een introductiewebsite voor een luxe juwelenmerk met elegante animaties, hoge resolutie beelden en meeslepende storytelling.",
+    ai: "Bakkerij",
+    ai2: "Een aantrekkelijke bakkerijwebsite met menuhighlights, online bestellen en vloeiende React.js-interface met modern Tailwind-design.",
+    creativ1: " Kledingwinkel",
+    creativ2: "Een kledingwebshop met categorie-filters, seizoenslookbooks, winkelwagenintegratie en aangepast adminpaneel.",
+    resto: "Bakkerij",
+    resto2: " Een dynamisch bakkerij-bestelplatform met gebruikerslogin, live winkelwagenupdates en aangepaste PHP/MySQL-backend.",
+    tech2: "Restaurantwebsite",
+    tech3: "Een moderne restaurantwebsite met digitaal menu, reserveringssysteem, locatiekaart en mobielvriendelijk design.",
+    foot: "Laten We Iets Geweldigs Creëren",
+    foot2: "Klaar om je visie tot leven te brengen? Neem contact op voor een gratis consult",
+    name1: "Je Naam",
+    gmail: "E-mailadres",
+    proje3: "Projecttype",
+    detail1: "Projectdetails",
+    send1: "Bericht Verzenden",
+    bio: "Digitale ervaringen creëren die er niet alleen goed uitzien, maar ook uitzonderlijk presteren. Jouw visie, onze code.",
+    navig: "Navigatie",
+    projectPlaceholder: "bijv. E-commerce, Portfolio, zakelijke website",
+    messagePlaceholder: "Vertel me over je project, doelen en tijdlijn...",
+    consulting: "Consultancy",
+    language: "Taal",
+    localis:"Nador, Marokko",
+
+  }
+};
+
+function setLanguage(lang) {
+  const elements = document.querySelectorAll("[data-translate]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-translate");
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+  const placeholderElements = document.querySelectorAll("[data-translate-placeholder]");
+  placeholderElements.forEach(el => {
+    const key = el.getAttribute("data-translate-placeholder");
+    if (translations[lang] && translations[lang][key]) {
+      el.placeholder = translations[lang][key];
+    }
+  });
+}
+
+
+
+        </script>
+        
+
+    <script>
+        // Contact Form Handler
+        async function handleSubmit(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const submitBtn = form.querySelector('.submit-btn');
+  const originalBtnText = submitBtn.textContent;
+
+  const formDataObj = {
+    name: form.name.value.trim(),
+    email: form.email.value.trim(),
+    project: form.project.value.trim(),
+    message: form.message.value.trim()
+  };
+
+  // Validate
+  if (!validateForm(formDataObj)) {
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalBtnText;
+    submitBtn.style.opacity = '1';
+    return;
+  }
+
+  const formData = new FormData(form);
+
+  // Disable button & show loading
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+  submitBtn.style.opacity = '0.7';
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData,
+    });
+
+    const result = await response.json();
+
+    if (response.ok && result.success) {
+      showMessage('Thank you! Your message has been sent successfully. I\'ll get back to you soon!', 'success');
+      form.reset();
+    } else {
+      showMessage('Oops! Something went wrong. Please try again.', 'error');
+      console.error('Error response:', result);
+    }
+  } catch (error) {
+    showMessage('Error submitting form. Please check your internet connection and try again.', 'error');
+    console.error('Fetch error:', error);
+  }
+
+  // Re-enable button & reset text
+  submitBtn.disabled = false;
+  submitBtn.textContent = originalBtnText;
+  submitBtn.style.opacity = '1';
+}
+
+
+// Form validation function
+function validateForm(data) {
+    const errors = [];
+    
+    // Name validation
+    if (!data.name || data.name.length < 2) {
+        errors.push('Please enter a valid name (at least 2 characters)');
+    }
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!data.email || !emailRegex.test(data.email)) {
+        errors.push('Please enter a valid email address');
+    }
+    
+    // Message validation
+    if (!data.message || data.message.length < 10) {
+        errors.push('Please provide project details (at least 10 characters)');
+    }
+    
+    // Show errors if any
+    if (errors.length > 0) {
+        showMessage(errors.join('<br>'), 'error');
+        return false;
+    }
+    
+    return true;
+}
+
+// Function to show messages to user
+function showMessage(message, type) {
+    // Remove existing messages
+    const existingMessage = document.querySelector('.form-message');
+    if (existingMessage) {
+        existingMessage.remove();
+    }
+    
+    // Create message element
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `form-message ${type}`;
+    messageDiv.innerHTML = message;
+    
+    // Insert message before the form
+    const form = document.querySelector('.contact-form');
+    form.parentNode.insertBefore(messageDiv, form);
+    
+    // Auto-remove message after 5 seconds
+    setTimeout(() => {
+        if (messageDiv.parentNode) {
+            messageDiv.remove();
+        }
+    }, 5000);
+    
+    // Scroll to message
+    messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Add CSS for message styling (you can move this to your CSS file)
+const messageStyles = `
+    .form-message {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        animation: slideIn 0.3s ease-out;
+    }
+    
+    .form-message.success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    
+    .form-message.error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+
+// Inject styles
+const styleSheet = document.createElement('style');
+styleSheet.textContent = messageStyles;
+document.head.appendChild(styleSheet);
+
+// Optional: Add real-time form validation
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form');
+    if (form) {
+        // Add input event listeners for real-time validation
+        const inputs = form.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                validateField(this);
+            });
+        });
+    }
+});
+
+// Individual field validation
+function validateField(field) {
+    const value = field.value.trim();
+    const fieldName = field.name;
+    let isValid = true;
+    let errorMessage = '';
+    
+    // Remove existing error styling
+    field.classList.remove('error');
+    const existingError = field.parentNode.querySelector('.field-error');
+    if (existingError) {
+        existingError.remove();
+    }
+    
+    // Validate based on field type
+    switch (fieldName) {
+        case 'name':
+            if (value.length > 0 && value.length < 2) {
+                isValid = false;
+                errorMessage = 'Name must be at least 2 characters';
+            }
+            break;
+        case 'email':
+            if (value.length > 0) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(value)) {
+                    isValid = false;
+                    errorMessage = 'Please enter a valid email address';
+                }
+            }
+            break;
+        case 'message':
+            if (value.length > 0 && value.length < 10) {
+                isValid = false;
+                errorMessage = 'Message must be at least 10 characters';
+            }
+            break;
+    }
+    
+    // Show error if invalid
+    if (!isValid) {
+        field.classList.add('error');
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'field-error';
+        errorDiv.textContent = errorMessage;
+        field.parentNode.appendChild(errorDiv);
+    }
+}
+
+// Add field error styling
+const fieldErrorStyles = `
+    .form-group input.error,
+    .form-group textarea.error {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    }
+    
+    .field-error {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 5px;
+    }
+`;
+
+// Inject field error styles
+const fieldStyleSheet = document.createElement('style');
+fieldStyleSheet.textContent = fieldErrorStyles;
+document.head.appendChild(fieldStyleSheet);
+        function initSmoothScrolling() {
+  const links = document.querySelectorAll('a[href^="#"]');
+  
+  links.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        const offsetTop = targetElement.offsetTop - 80; // Account for fixed nav
+        
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+}
+
+
+
+      </script>
+      <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.getElementById('navMenu');
+            
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        }
+       // Close menu when clicking on nav links (mobile)
+       document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.getElementById('navMenu');
+                
+                if (navMenu.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+     
+        
+         // Close menu when clicking outside (mobile)
+         document.addEventListener('click', (e) => {
+            const nav = document.querySelector('nav');
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (!nav.contains(e.target) && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+         // Smooth scrolling for navigation links
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+      </script>
+
+
+      
+</body>
+</html>
