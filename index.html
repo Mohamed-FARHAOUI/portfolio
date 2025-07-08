@@ -1114,6 +1114,46 @@ document.head.appendChild(fieldStyleSheet);
         });
       </script>
 
+<!-- Cookie Consent Banner -->
+<div id="cookieConsent" style="
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--light-bg); /* #1a202c */
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+  ">
+  We use cookies to improve your experience. By using our site, you accept our 
+  <a href="/privacy" style="color:#4CAF50; text-decoration: underline;">Privacy Policy</a>.
+  <button id="acceptCookies" style="
+    margin-left: 15px;
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #052633, #094b6a);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  ">
+    Accept
+  </button>
+</div>
+
+<script>
+  if (!localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookieConsent').style.display = 'block';
+  }
+  document.getElementById('acceptCookies').addEventListener('click', function() {
+    localStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookieConsent').style.display = 'none';
+  });
+  // Button hover scale effect
+  const btn = document.getElementById('acceptCookies');
+  btn.addEventListener('mouseenter', () => btn.style.transform = 'scale(1.05)');
+  btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
+</script>
 
       
 </body>
