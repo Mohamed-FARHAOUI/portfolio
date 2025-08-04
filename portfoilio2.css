@@ -1721,3 +1721,37 @@ nav a:hover {
     -webkit-text-fill-color: #bebebe !important;
     background-color: rgba(255, 255, 255, 0.05) !important;
 }
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+    .phone-section {
+        gap: 6px; /* Even smaller gap on mobile */
+    }
+    
+    .phone-section select {
+        min-width: 90px;    /* Increased from 70px */
+        max-width: 110px;   /* Increased from 85px */
+        padding: 15px 8px;  /* Increased padding from 6px */
+        font-size: 14px;
+        flex: 0 0 110px;    /* Fixed width instead of auto */
+    }
+    
+    .phone-section input[type="tel"] {
+        font-size: 16px; /* Prevents iOS zoom */
+        flex: 0 0 calc(100% - 116px); /* Fixed smaller width (container - select width - gap) */
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .phone-section select {
+        min-width: 85px;    /* Increased from 65px */
+        max-width: 100px;   /* Increased from 80px */
+        padding: 15px 6px;  /* Increased padding from 4px */
+        flex: 0 0 100px;    /* Fixed width */
+    }
+    
+    .phone-section input[type="tel"] {
+        flex: 0 0 calc(100% - 106px); /* Adjusted for new select width */
+    }
+}
