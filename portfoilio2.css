@@ -1755,8 +1755,7 @@ nav a:hover {
         flex: 0 0 calc(100% - 106px); /* Adjusted for new select width */
     }
 }
-
-#snowfall-canvas {
+#snow {
     position: fixed;
     top: 0;
     left: 0;
