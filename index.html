@@ -21,7 +21,7 @@
 
 </head>
 <body>
-    <canvas id="snowfall-canvas"></canvas>
+<canvas id="snow"></canvas>
     <nav class="glass">
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
@@ -1156,6 +1156,8 @@ document.head.appendChild(fieldStyleSheet);
   btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
 </script>
     <script>
+// Remove the tsParticles script entirely and replace with this:
+
 class Snowflake {
     constructor(canvas) {
         this.canvas = canvas;
@@ -1200,10 +1202,16 @@ class Snowflake {
 
 class SnowfallAnimation {
     constructor() {
-        this.canvas = document.getElementById('snowfall-canvas');
+        this.canvas = document.getElementById('snow');
+        if (!this.canvas) {
+            console.error('Snow canvas not found');
+            return;
+        }
+        
         this.ctx = this.canvas.getContext('2d');
         this.snowflakes = [];
         this.numberOfFlakes = 150;
+        this.animationId = null;
 
         this.resize();
         this.init();
@@ -1232,32 +1240,49 @@ class SnowfallAnimation {
             flake.draw(this.ctx);
         });
 
-        requestAnimationFrame(() => this.animate());
+        this.animationId = requestAnimationFrame(() => this.animate());
     }
-}
 
-// Check if current month is December (month 11, since months are 0-indexed)
-function isDecember() {
-    const currentDate = new Date();
-    return currentDate.getMonth() === 11; // 11 = December
-}
-
-// Initialize snowfall only in December
-window.addEventListener('load', () => {
-    if (isDecember()) {
-        new SnowfallAnimation();
-        console.log('🎄 December snowfall activated!');
-    } else {
-        console.log('❄️ Snowfall will appear in December');
-        // Hide the canvas if it's not December
-        const canvas = document.getElementById('snowfall-canvas');
-        if (canvas) {
-            canvas.style.display = 'none';
+    destroy() {
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
         }
     }
-});
-</script>
+}
 
+// Check if current month is December
+function isDecember() {
+    const currentDate = new Date();
+    return currentDate.getMonth() === 11; // 11 = December (0-indexed)
+}
+
+// Initialize snowfall
+let snowfallInstance = null;
+
+function initSnowfall() {
+    const snowCanvas = document.getElementById('snow');
+    
+    if (!snowCanvas) {
+        console.error('Snow canvas element not found');
+        return;
+    }
+
+    if (isDecember()) {
+        snowfallInstance = new SnowfallAnimation();
+        console.log('🎄 December snowfall activated!');
+    } else {
+        snowCanvas.style.display = 'none';
+        console.log('❄️ Snowfall will appear in December');
+    }
+}
+
+// Wait for DOM to be ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSnowfall);
+} else {
+    initSnowfall();
+}
+</script>
       
 </body>
 </html>
