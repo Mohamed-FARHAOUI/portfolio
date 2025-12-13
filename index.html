@@ -21,6 +21,7 @@
 
 </head>
 <body>
+    <canvas id="snowfall-canvas"></canvas>
     <nav class="glass">
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
@@ -1153,6 +1154,108 @@ document.head.appendChild(fieldStyleSheet);
   const btn = document.getElementById('acceptCookies');
   btn.addEventListener('mouseenter', () => btn.style.transform = 'scale(1.05)');
   btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
+</script>
+    <script>
+class Snowflake {
+    constructor(canvas) {
+        this.canvas = canvas;
+        this.reset();
+    }
+
+    reset() {
+        this.x = Math.random() * this.canvas.width;
+        this.y = Math.random() * -100;
+        this.size = Math.random() * 3 + 1;
+        this.speed = Math.random() * 1 + 0.5;
+        this.opacity = Math.random() * 0.8 + 0.2;
+        this.wind = Math.random() * 0.5 - 0.25;
+        this.swing = Math.random() * 0.5;
+        this.swingCounter = 0;
+    }
+
+    update() {
+        this.y += this.speed;
+        this.swingCounter += 0.01;
+        this.x += Math.sin(this.swingCounter) * this.swing + this.wind;
+
+        if (this.y > this.canvas.height) {
+            this.reset();
+            this.y = -10;
+        }
+
+        if (this.x > this.canvas.width) {
+            this.x = 0;
+        } else if (this.x < 0) {
+            this.x = this.canvas.width;
+        }
+    }
+
+    draw(ctx) {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+        ctx.fill();
+    }
+}
+
+class SnowfallAnimation {
+    constructor() {
+        this.canvas = document.getElementById('snowfall-canvas');
+        this.ctx = this.canvas.getContext('2d');
+        this.snowflakes = [];
+        this.numberOfFlakes = 150;
+
+        this.resize();
+        this.init();
+        this.animate();
+
+        window.addEventListener('resize', () => this.resize());
+    }
+
+    resize() {
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+    }
+
+    init() {
+        this.snowflakes = [];
+        for (let i = 0; i < this.numberOfFlakes; i++) {
+            this.snowflakes.push(new Snowflake(this.canvas));
+        }
+    }
+
+    animate() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+        this.snowflakes.forEach(flake => {
+            flake.update();
+            flake.draw(this.ctx);
+        });
+
+        requestAnimationFrame(() => this.animate());
+    }
+}
+
+// Check if current month is December (month 11, since months are 0-indexed)
+function isDecember() {
+    const currentDate = new Date();
+    return currentDate.getMonth() === 11; // 11 = December
+}
+
+// Initialize snowfall only in December
+window.addEventListener('load', () => {
+    if (isDecember()) {
+        new SnowfallAnimation();
+        console.log('🎄 December snowfall activated!');
+    } else {
+        console.log('❄️ Snowfall will appear in December');
+        // Hide the canvas if it's not December
+        const canvas = document.getElementById('snowfall-canvas');
+        if (canvas) {
+            canvas.style.display = 'none';
+        }
+    }
+});
 </script>
 
       
