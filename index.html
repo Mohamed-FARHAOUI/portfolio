@@ -181,15 +181,18 @@
         </div>
     </section>
 
-    <section id="portfolio" class="section">
-        <h2 class="section-title" data-translate="featur">Featured Work</h2>
-            <p class="section-subtitle" data-translate="featur2">Showcasing cutting-edge websites I've crafted for forward-thinking clients</p>
-            
-        <div class="container2">
-            
-            <div class="portfolio-grid">
+   
+
+<section id="portfolio" class="section">
+    <h2 class="section-title" data-translate="featur">Featured Work</h2>
+    <p class="section-subtitle" data-translate="featur2">Showcasing cutting-edge websites I've crafted for forward-thinking clients</p>
+
+    <div class="container2">
+        <div class="portfolio-grid">
+
+            <a href="project-detail.html?id=portfolio-website" class="portfolio-card-link">
                 <div class="portfolio-card">
-                    <div class="portfolio-image"> <img src="port1.jpg" alt=""></div>
+                    <div class="portfolio-image"><img src="port1.jpg" alt="Portfolio Website"></div>
                     <h3 class="portfolio-title" data-translate="fintech">Portfolio Website</h3>
                     <p class="portfolio-description" data-translate="fintech2">A clean and modern personal portfolio showcasing projects, skills, and contact information, built with smooth scroll and responsive design.</p>
                     <div class="portfolio-tech">
@@ -198,9 +201,11 @@
                         <span class="tech-tag">JavaScript</span>
                     </div>
                 </div>
+            </a>
 
+            <a href="project-detail.html?id=luxury-jewelry" class="portfolio-card-link">
                 <div class="portfolio-card">
-                    <div class="portfolio-image"><img src="port2.jpg" alt=""></div>
+                    <div class="portfolio-image"><img src="port2.jpg" alt="Luxury Jewelry Webpage"></div>
                     <h3 class="portfolio-title" data-translate="lux">Luxury Jewelry Webpage</h3>
                     <p class="portfolio-description" data-translate="lux2">A luxury jewelry brand introduction website with elegant animations, high-resolution product displays, and captivating storytelling.</p>
                     <div class="portfolio-tech">
@@ -209,21 +214,23 @@
                         <span class="tech-tag">JavaScript</span>
                     </div>
                 </div>
+            </a>
 
+            <a href="project-detail.html?id=bakery-react" class="portfolio-card-link">
                 <div class="portfolio-card">
-                    <div class="portfolio-image"><img src="port3.jpeg" alt=""></div>
+                    <div class="portfolio-image"><img src="port3.jpeg" alt="Bakery Store"></div>
                     <h3 class="portfolio-title" data-translate="ai">Bakery Store</h3>
-                    <p class="portfolio-description" data-translate="ai2"> A visually appealing bakery website with menu highlights, online ordering, and smooth React.js UI using modern Tailwind design.</p>
+                    <p class="portfolio-description" data-translate="ai2">A visually appealing bakery website with menu highlights, online ordering, and smooth React.js UI using modern Tailwind design.</p>
                     <div class="portfolio-tech">
                         <span class="tech-tag">React.js</span>
                         <span class="tech-tag">Tailwind CSS</span>
-                        <!-- <span class="tech-tag">GSAP</span>
-                        <span class="tech-tag">WebGL</span> -->
                     </div>
                 </div>
+            </a>
 
+            <a href="project-detail.html?id=clothing-store" class="portfolio-card-link">
                 <div class="portfolio-card">
-                    <div class="portfolio-image"><img src="port4.jpeg" alt=""></div>
+                    <div class="portfolio-image"><img src="port4.jpeg" alt="Clothing Store"></div>
                     <h3 class="portfolio-title" data-translate="creativ1">Clothing Store</h3>
                     <p class="portfolio-description" data-translate="creativ2">An e-commerce clothing website with category filters, seasonal lookbooks, cart integration, and a custom admin panel.</p>
                     <div class="portfolio-tech">
@@ -234,9 +241,11 @@
                         <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
+            </a>
 
+            <a href="project-detail.html?id=bakery-php" class="portfolio-card-link">
                 <div class="portfolio-card">
-                    <div class="portfolio-image"><img src="port5.jpg" alt=""></div>
+                    <div class="portfolio-image"><img src="port5.jpg" alt="Bakery Ordering Platform"></div>
                     <h3 class="portfolio-title" data-translate="resto">Bakery Store</h3>
                     <p class="portfolio-description" data-translate="resto2">A dynamic bakery ordering platform featuring user login, real-time cart updates, and a custom-built PHP/MySQL backend for order management.</p>
                     <div class="portfolio-tech">
@@ -245,26 +254,54 @@
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">PHP</span>
                         <span class="tech-tag">MySQL</span>
-        
                     </div>
                 </div>
+            </a>
 
+            <a href="project-detail.html?id=restaurant-website" class="portfolio-card-link">
                 <div class="portfolio-card">
-                    <div class="portfolio-image"><img src="port6.jpg" alt=""></div>
+                    <div class="portfolio-image"><img src="port6.jpg" alt="Restaurant Website"></div>
                     <h3 class="portfolio-title" data-translate="tech2">Restaurant Website</h3>
-                    <p class="portfolio-description " data-translate="tech3">A modern restaurant website with a digital menu, reservation system, location map, and responsive design for mobile users.</p>
+                    <p class="portfolio-description" data-translate="tech3">A modern restaurant website with a digital menu, reservation system, location map, and responsive design for mobile users.</p>
                     <div class="portfolio-tech">
-                        <!-- <span class="tech-tag">Svelte</span>
-                        <span class="tech-tag">CSS Grid</span>
-                        <span class="tech-tag">Intersection Observer</span>
-                        <span class="tech-tag">PWA</span> -->
                         <span class="tech-tag">React.js</span>
                         <span class="tech-tag">Tailwind CSS</span>
                     </div>
                 </div>
-            </div>
+            </a>
+
         </div>
-    </section>
+
+        <div class="view-all-wrap">
+            <a href="portfolio-all.html" class="view-all-btn" data-translate="viewall">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const grid = document.getElementById('homePortfolioGrid');
+        if (!grid || typeof projectsData === 'undefined') return;
+
+        const featured = projectsData.slice(0, 6);
+        grid.innerHTML = featured.map(p => `
+            <a href="project-detail.html?id=${encodeURIComponent(p.id)}" class="portfolio-card-link">
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="${p.coverImage}" alt="${p.title}"></div>
+                    <h3 class="portfolio-title">${p.title}</h3>
+                    <p class="portfolio-description">${p.shortDescription}</p>
+                    <div class="portfolio-tech">
+                        ${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+                    </div>
+                </div>
+            </a>
+        `).join('');
+
+
+        if (window.reobserveFadeIns) window.reobserveFadeIns();
+    });
+</script>
 
     <section id="contact" class="section">
         <div class="container">
