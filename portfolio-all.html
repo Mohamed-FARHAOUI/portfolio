@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Tricodes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfoilio2.css" type="text/css">
+    <link rel="stylesheet" href="portfolio-extra.css" type="text/css">
+    <link rel="shortcut icon" href="image/logotop.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="glass">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <ul id="navMenu">
+          <li><a href="protfolio2.html">Home</a></li>
+          <li><a href="protfolio2.html">About</a></li>
+          <li><a href="protfolio2.html">Services</a></li>
+          <li><a href="portfolio-all.html">Portfolio</a></li>
+          <li><a href="protfolio2.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h2 class="section-title">All Projects</h2>
+        <p class="section-subtitle">Every project I've crafted, in one place — click any card for the full story.</p>
+    </header>
+
+    <div class="category-filters" id="categoryFilters">
+        <!-- filled in by JS -->
+    </div>
+
+    <div class="all-projects-grid" id="allProjectsGrid">
+        <!-- filled in by JS -->
+    </div>
+
+    <script src="projects-data.js"></script>
+    <script>
+        const grid = document.getElementById('allProjectsGrid');
+        const filtersWrap = document.getElementById('categoryFilters');
+
+        function renderGrid(filter) {
+            grid.innerHTML = '';
+            const list = filter === 'All'
+                ? projectsData
+                : projectsData.filter(p => p.category === filter);
+
+            list.forEach(p => {
+                const card = document.createElement('a');
+                card.href = `project-detail.html?id=${encodeURIComponent(p.id)}`;
+                card.className = 'portfolio-card-link';
+                card.innerHTML = `
+                    <div class="portfolio-card">
+                        <div class="portfolio-image"><img src="${p.coverImage}" alt="${p.title}"></div>
+                        <h3 class="portfolio-title">${p.title}</h3>
+                        <p class="portfolio-description">${p.shortDescription}</p>
+                        <div class="portfolio-tech">
+                            ${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function renderFilters() {
+            const categories = ['All', ...new Set(projectsData.map(p => p.category))];
+            filtersWrap.innerHTML = categories.map((c, i) =>
+                `<button class="filter-btn${i === 0 ? ' active' : ''}" data-cat="${c}">${c}</button>`
+            ).join('');
+
+            filtersWrap.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filtersWrap.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderGrid(btn.dataset.cat);
+                });
+            });
+        }
+
+        renderFilters();
+        renderGrid('All');
+    </script>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.hamburger').classList.remove('active');
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
