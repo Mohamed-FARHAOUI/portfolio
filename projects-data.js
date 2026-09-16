@@ -1,17 +1,4 @@
-/* =========================================================
-   PROJECTS DATA
-   =========================================================
-   This is the single source of truth for every project shown
-   on the site: the homepage portfolio grid, the "All Projects"
-   page, and each project's detail page.
 
-   TO ADD A NEW PROJECT:
-   1. Copy one of the objects below.
-   2. Give it a unique "id" (no spaces, lowercase, dashes ok).
-   3. Fill in the fields.
-   4. Add your image(s) to the /image folder and reference them.
-   That's it — it will automatically show up everywhere.
-   ========================================================= */
 
    const projectsData = [
     {
@@ -19,8 +6,8 @@
       title: "Portfolio Website",
       category: "Portfolio",
       year: "2025",
-      coverImage: "image/port1.jpg",
-      gallery: ["image/port1.jpg"],
+      coverImage: "port1.jpg",
+      gallery: ["port1.jpg"],
       shortDescription:
         "A clean and modern personal portfolio showcasing projects, skills, and contact information, built with smooth scroll and responsive design.",
       description:
@@ -40,8 +27,8 @@
       title: "Luxury Jewelry Webpage",
       category: "Brand / E-commerce",
       year: "2025",
-      coverImage: "image/port2.jpg",
-      gallery: ["image/port2.jpg"],
+      coverImage: "port2.jpg",
+      gallery: ["port2.jpg"],
       shortDescription:
         "A luxury jewelry brand introduction website with elegant animations, high-resolution product displays, and captivating storytelling.",
       description:
@@ -61,8 +48,8 @@
       title: "Bakery Store",
       category: "E-commerce",
       year: "2025",
-      coverImage: "image/port3.jpeg",
-      gallery: ["image/port3.jpeg"],
+      coverImage: "port3.jpeg",
+      gallery: ["port3.jpeg"],
       shortDescription:
         "A visually appealing bakery website with menu highlights, online ordering, and smooth React.js UI using modern Tailwind design.",
       description:
@@ -82,8 +69,8 @@
       title: "Clothing Store",
       category: "E-commerce",
       year: "2025",
-      coverImage: "image/port4.jpeg",
-      gallery: ["image/port4.jpeg"],
+      coverImage: "port4.jpeg",
+      gallery: ["port4.jpeg"],
       shortDescription:
         "An e-commerce clothing website with category filters, seasonal lookbooks, cart integration, and a custom admin panel.",
       description:
@@ -103,8 +90,8 @@
       title: "Bakery Ordering Platform",
       category: "E-commerce",
       year: "2025",
-      coverImage: "image/port5.jpg",
-      gallery: ["image/port5.jpg"],
+      coverImage: "port5.jpg",
+      gallery: ["port5.jpg"],
       shortDescription:
         "A dynamic bakery ordering platform featuring user login, real-time cart updates, and a custom-built PHP/MySQL backend for order management.",
       description:
@@ -124,8 +111,8 @@
       title: "Restaurant Website",
       category: "Hospitality",
       year: "2025",
-      coverImage: "image/port6.jpg",
-      gallery: ["image/port6.jpg"],
+      coverImage: "port6.jpg",
+      gallery: ["port6.jpg"],
       shortDescription:
         "A modern restaurant website with a digital menu, reservation system, location map, and responsive design for mobile users.",
       description:
